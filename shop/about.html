@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="style.css" rel="stylesheet" />
+<style>
+body {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column1{
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card1{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.container2{
+  padding: 0 16px;
+}
+
+.container2::after, .row1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button5 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color:#e11d74;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button5:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column1{
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+<div class="menu">
+      <a href="contact.html">Contact Us</a>
+      <a href="about.html" class="active">About</a>
+      <a href="car.html">Car</a>
+      <a href="phone.html">iPhone</a>
+      <a href="index.html">Home</a>
+  </div>
+<div class="about-section">
+  <h1>About our Team Members</h1>
+</div>
+<div class="row1">
+  <div class="column1">
+    <div class="card1">
+      <img src="images/1.jpg" alt="Jane" style="width:100%">
+      <div class="container2">
+        <h2 style="color:#e11d74;">Sania Doe</h2>
+        <p class="title">Team head</p>
+        <p>Phone:+91 7463754631</p>
+        <p>Mail-id:sania@cradlecart.com</p>
+        <p>Address:New Delhi,India</p>
+        
+        <p><a href="contact.html"><button class="button5" >Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column1">
+    <div class="card1">
+      <img src="images/2.jpg" alt="Mike" style="width:100%">
+      <div class="container2">
+        <h2 style="color:#e11d74;">Mike Ross</h2>
+        <p class="title">Web Developer</p>
+        <p>Phone:+91 8796574437</p>
+        <p>Mail-id:mike@cradlecart.com</p>
+        <p>Address:Bombay,India</p>
+        <p><a href="contact.html"><button class="button5">Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column1">
+    <div class="card1">
+      <img src="images/3.jpg" alt="John" style="width:100%">
+      <div class="container2">
+        <h2 style="color:#e11d74;">Jenny Doe</h2>
+        <p class="title">Designer</p>
+        <p>Phone:+91 9465676744</p>
+        <p>Mail-id:jenny@cradlecart.com</p>
+        <p>Address:Kolkata,India</p>
+        <p><a href="contact.html"><button class="button5">Contact</button></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<section></section>
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+          <img src="images/cart.jpg">
+				<h3>About<span>Cradle cart</span></h3>
+
+				<p class="footer-links">
+					<a href="index.html">Home</a>
+					|
+					<a href="#">Blog</a>
+					|
+					<a href="about.html">About</a>
+					|
+					<a href="contact.html">Contact</a>
+				</p>
+			</div>
+
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p>ITPL Main Road, Brookefield, Bengaluru - 560066, Karnataka</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+91 22-27782183</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@eduonix.com">support@cradlecart.com</a></p>
+				</div>
+			<div>
+        <p class="footer-company-name">© 2020 Cradle Cart online shopping Pvt. Ltd.</p>
+      </div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the company</span>
+					We offer intime services to the customers with quality products.<br>
+          <br>
+          <span>You can follow us on:</span>
+          </p>
+
+				<div class="footer-icons">
+				<span><img src="images/w.jpg"/></span>
+        <span><img src="images/i.jpg"/></span>
+        <span><img src="images/t.png"/></span>
+        <span><img src="images/f.jpg"/></span>
+        <span><img src="images/m.png"/></span>
+				</div>
+        <br>
+        <h2 style="color:#ffffff;font-family:cursive;">Designed by @KAVYA M SHANBHOG</h2>
+			</div>
+		</footer>
+</body>
+</html>

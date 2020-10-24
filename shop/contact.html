@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet" />
+<style>
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container2 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column1{
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column1, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+<div class="menu">
+      
+      <a href="contact.html" class="active">Contact Us</a>
+      <a href="about.html">About</a>
+      <a href="car.html">Car</a>
+      <a href="phone.html">iPhone</a>
+      <a href="index.html">Home</a>
+</div>
+
+<div class="container2">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+  </div>
+  <div class="row1">
+    <div class="column1">
+      <img src="images/map.jpg" style="width:100%">
+    </div>
+    <div class="column1">
+      <form action="">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+		<option value="India">India</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+<section>
+</section>
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+          <img src="images/cart.jpg">
+				<h3>About<span>Cradle cart</span></h3>
+
+				<p class="footer-links">
+					<a href="index.html">Home</a>
+					|
+					<a href="#">Blog</a>
+					|
+					<a href="about.html">About</a>
+					|
+					<a href="contact.html">Contact</a>
+				</p>
+			</div>
+
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p>ITPL Main Road, Brookefield, Bengaluru - 560066, Karnataka</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+91 22-27782183</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@eduonix.com">support@cradlecart.com</a></p>
+				</div>
+			<div>
+        <p class="footer-company-name">© 2020 Cradle Cart online shopping Pvt. Ltd.</p>
+      </div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the company</span>
+					We offer intime services to the customers with quality products.<br>
+          <br>
+          <span>You can follow us on:</span>
+          </p>
+
+				<div class="footer-icons">
+				<span><img src="images/w.jpg"/></span>
+        <span><img src="images/i.jpg"/></span>
+        <span><img src="images/t.png"/></span>
+        <span><img src="images/f.jpg"/></span>
+        <span><img src="images/m.png"/></span>
+        
+				</div>
+        <br>
+        <h2 style="color:#ffffff;font-family:cursive;">Designed by @KAVYA M SHANBHOG</h2>
+			</div>
+		</footer>
+
+</body>
+</html>
